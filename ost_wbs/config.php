@@ -4,11 +4,11 @@
 error_reporting();
 
 // Database Credentials
-define('DBTYPE',''); // Database type (mysql, sql..)
-define('DBHOST',''); // IP Address
-define('DBNAME',''); // Database Name
-define('DBUSER',''); // Database User
-define('DBPASS',''); // Database Password
+define('DBTYPE','mysql'); // Database type (mysql, sql..)
+define('DBHOST',getenv('MYSQL_HOST')); // IP Address
+define('DBNAME',getenv('MYSQL_DATABASE')); // Database Name
+define('DBUSER',getenv('MYSQL_USER')); // Database User
+define('DBPASS',getenv('MYSQL_PASSWORD')); // Database Password
 
 // Table prefix
 define('TABLE_PREFIX','ost_');

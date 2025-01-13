@@ -17,7 +17,7 @@ require_once 'config.php';
 
 // Autoload class files
 spl_autoload_register( function ( $class ) {
-    require_once 'classes/class.' . lcfirst($class) . '.php';
+    require_once 'classes/class.' . strtolower($class) . '.php';
 });
 
 // Main Class
